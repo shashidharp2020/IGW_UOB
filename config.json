@@ -1,0 +1,35 @@
+{
+  "appscanData": {
+    "appscanProvider": "ASE",
+    "url": "https://<hostname>:9443/ase",
+    "apikeyid": "-----",
+    "apikeysecret": "----",
+    "appid": "5",
+    "issuestates": "New,Open",
+    "maxissues": 4,
+    "includeIssuefilters": {},
+    "excludeIssuefilters": {},
+    "other": {}
+  },
+  "imData": {
+    "provider": "jira",
+    "config": {
+      "url": "http://localhost:8080",
+      "username": "<username>",
+      "password": "<password>",
+      "projectkey": "<Jira project key>",
+      "issuetype": "Task",
+      "summary": "Security issue: %IssueType% found by %Scanner%",
+	  "severityfield": "priority",
+      "severitymap": {
+        "High": "High",
+        "Medium": "High",
+        "Low": "Low",
+        "Information": "Low"
+      },
+      "otherfields": {
+        "labels": ["appscan", "security"]
+      }
+    }
+  }
+}
